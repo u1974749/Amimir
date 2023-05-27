@@ -1,0 +1,122 @@
+button{
+    width: 300px;
+    height: 80px;
+    margin-left: 12%;
+	margin-top: 10px;
+    border-color: coral;
+    border-radius: 5px;
+    background-color:rgb(255, 235, 171);
+    background-position-x: center;
+    background-position-y: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    font-size: 25px;
+}
+button:hover:not(:active){
+    background-color: rgb(255, 243, 205);
+    border: 4px solid;
+    border-color: coral;
+    border-style: outset;
+    border-radius: 5px;
+}
+button:active{ 
+    background-color:rgb(218, 194, 115);
+    border: 6px solid;
+    border-color: coral;
+    border-style: outset;
+    border-radius: 5px;
+}
+h1{
+    border: 9px solid;
+    border-color:coral;
+    border-style: outset;
+    border-radius: 5px;
+    background-color:rgb(249, 237, 196);
+    background-position-x: center;
+    background-position-y: center;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 40px;
+}
+#game_area{
+    margin-top: 50px;
+    text-align: center;
+}
+#back{
+  background-image: url("../ASSETS/fondo_menu.jpg");
+  height: 100%;
+  background-repeat:no-repeat;
+  background-position:top;
+  background-size: cover;
+  display: flex;
+}
+#menu_background{
+    margin-left: 15%;
+    margin-top: 3%;
+    border: 7px solid;
+    border-color:coral;
+    border-style: outset;
+    border-radius: 10px;
+    background-color: rgb(255, 207, 143);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    display:block;
+	width: 400px;
+	height: 600px;
+}
+#logo{
+    margin-left: 10%;
+    margin-top: 10%;
+}
+#logo:hover > #cola{
+    animation: rotCola 1s ease-in-out infinite alternate;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+#logo:hover > #nariz{
+    animation: rotNariz 4s ease-in-out infinite alternate;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+#logo:hover > #orejas{
+    animation: movOrejas 3s ease-in-out infinite alternate;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+#logo:hover > #ojos{
+    animation: abrirOjos 0.001s;
+    animation-fill-mode: forwards;
+}
+@keyframes rotCola {
+    from {
+        transform: rotateZ(10deg);
+    }
+    to {
+        transform: rotateZ(-10deg);
+    }
+}
+@keyframes rotNariz {
+    from {
+        transform: rotateZ(-10deg);
+    }
+    to {
+        transform: rotateZ(10deg);
+    }
+}
+@keyframes movOrejas {
+    from {
+        transform: translateY(-10%);
+    }
+    to {
+        transform: translateY(10%);
+    }
+}
+@keyframes abrirOjos {
+    from {
+        transform: translateX(0px);
+    }
+    to {
+        transform: translateX(300px);
+    }
+}
