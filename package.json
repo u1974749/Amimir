@@ -4,7 +4,7 @@
   "description": "",
   "main": "JS/menu_controller.js",
   "scripts": {
-    "build": "azure"
+    "build": "vuepress build"
   },
   "repository": {
     "type": "git",
