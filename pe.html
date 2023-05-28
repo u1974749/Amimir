@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Referencia Hoja de estilos -->
+        <link rel="stylesheet" href="./CSS/main.css">
+        <!-- Referencia JS -->
+        
+        <script src="./JS/loader.js"></script>
+        <script src="./JS/animation.js"></script>
+        
+    </head>
+    <body id="back">
+        <div id="menu_background">
+            <h1> REFORESTING BEARS </h1>
+            <button v-on:click="nuevaPartida"> 
+                Nueva Partida
+            </button>
+            <button :disabled="noPartida" v-on:click="cargarPartida"> 
+                Cargar Partida
+            </button>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley">
+            <button onclick="salir()"> 
+                Salir
+            </button>
+        </a>
+        </div>
+        <svg id="logo" width="600" height="400" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="300" cy="200" r="200" fill="black" opacity="0.3" />
+            <g id="cola">
+                <!-- cola -->
+                <polygon points="435,93 452,62 485,62 503,100 501,122 460,142"
+                fill="RGB(82 10 27)" stroke="none"/>
+            </g>
+            <!-- cuerpo -->
+            <polygon points="227,68 323,41 456,93 490,147 534,259 464,355 395,342 398,256"
+                fill="RGB(113 34 41)" stroke="none"/>
+            <!-- cara -->
+            <polygon points="109,63 78,87 76,125 105,137 66,266 104,304 172,256 260,250 
+                            323,304 376,232 318,133 333,94 314,61 275,66 266,84 200,58 150,85"
+                fill="RGB(124 44 44)" stroke="none"/>
+            <!-- hocico -->
+            <polygon points="104,303 172,255 260,249 323,303 261,328 191,333"
+                fill="RGB(156 58 42)" stroke="none"/>
+            <!-- pata1 -->
+            <polygon points="65,266 150,312 135,333 60,311"
+                fill="RGB(154 67 53)" stroke="none"/>
+            <!-- pata2 -->
+            <polygon points="315,305 345,272 375,231 401,258 400,340 373,364 240,348 259,323"
+                fill="RGB(154 67 53)" stroke="none"/>
+            <g id="nariz">
+                <!-- nariz -->
+                <polygon points="197,271 240,270 235,292 210,296"
+                    fill="RGB(0 0 0)" stroke="none"/>
+            </g>
+            <!-- ojo1Cerrado -->
+            <polygon points="143,205 150,212 149,212 154,213 159,211 166,204 165,214 161,217 152,218 146,215"
+                fill="RGB(0 0 0)" stroke="none"/>
+            <!-- ojo2Cerrado -->
+            <polygon points="253,195 260,202 259,202 264,203 269,201 276,194 275,204 271,207 262,208 256,205"
+                fill="RGB(0 0 0)" stroke="none"/>
+            <g id="orejas">
+                <!-- oreja1 -->
+                <polygon points="110,121 97,117 98,97 115,94 128,99"
+                fill="RGB(52 0 22)" stroke="none"/>
+                <!-- oreja2 -->
+                <polygon points="274,94 284,84 305,82 308,98 298,111"
+                fill="RGB(52 0 22)" stroke="none"/>
+            </g>
+            <g id="ojos">
+                <!-- ojo1Abierto -->
+                <circle cx="-35" cy="200" r="15"/>
+                <!-- ojo2Abierto -->
+                <circle cx="-145" cy="205" r="15"/>
+                <!-- ojo1Reflejo -->
+                <circle cx="-30" cy="195" r="5" fill="white"/>
+                <!-- ojo2Reflejo -->
+                <circle cx="-140" cy="200" r="5" fill="white"/>
+            </g>
+        </svg>
+    </body>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
+    <script src="./JS/menu_controller.js"></script>
+</html> 

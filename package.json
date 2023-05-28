@@ -4,7 +4,7 @@
   "description": "",
   "main": "JS/menu_controller.js",
   "scripts": {
-    "build": "index.html"
+    "build": "pe.html"
   },
   "repository": {
     "type": "git",
